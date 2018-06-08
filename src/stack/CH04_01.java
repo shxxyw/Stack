@@ -4,7 +4,7 @@ import java.io.*;
 
 public class CH04_01 {
 	public static void main(String[] args) throws  IOException {
-	BufferedReader buf;
+	BufferedReader buf;//¼üÅÌÁ÷Ğ´ÈëÄÚ´æ
 	int value;
 	StackByArray stack =new StackByArray(10);
 	buf=new BufferedReader(new InputStreamReader(System.in));
