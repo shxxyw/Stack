@@ -1,5 +1,5 @@
 package stack;
-import java.io.*;
+
 public class CH04_05_maze {
 //	出口坐标定义及迷宫
 public static int ExitX=8;
