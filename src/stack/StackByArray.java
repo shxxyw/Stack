@@ -30,5 +30,21 @@ public class StackByArray {//以数组模拟堆栈说明
 		if(top==-1) return true;
 		else return false;
 	}
-
+	
+//判断是否为出栈正确顺序
+	public boolean isStackOutSqueen(int[] num,StackByArray stackOrder) {
+		StackByArray tempStack = 
+				new StackByArray(stackOrder.stack.length);
+		
+		//按照顺序模拟一遍进栈
+		for(int i=0;i<num.length;i++) {
+			tempStack.push(num[i]);
+			while(!tempStack.empty()&&tempStack.stack[tempStack.top]
+					==stackOrder.stack[top]) {
+				tempStack.pop();
+				stackOrder.pop();
+			}
+		}		
+		return tempStack.empty();
+	}
 }

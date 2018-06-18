@@ -19,6 +19,7 @@ public static void PressEnter() {
 	System.out.print("\n\n");
 	System.out.println("...按下Enter继续...");
 	try {
+		//读取内容为后返回ASCII码，若返回-1说明没读到任何内容结束了
 		tchar=(char)System.in.read();
 	}catch(IOException e) {}
 }
